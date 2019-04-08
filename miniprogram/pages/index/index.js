@@ -50,6 +50,14 @@ Page({
       }
     })
   },
+  webview: function(){
+    wx.navigateTo({
+      url: '../webview',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
 
   bindPickerChange: function (event) {
     //console.log('picker发送选择改变，携带值为', e.detail.value)

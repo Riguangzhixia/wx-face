@@ -14,6 +14,8 @@
   <view wx:if="{{index==null}}">
   <view class='usermotto'>
   <button class="user-motto" bindtap='bindPickerChange'>进入系统</button>
+  <button class="user-motto" bindtap='webview'>新网页</button>
+
   </view>
   </view>
   <view wx:if="{{index != null}}">
