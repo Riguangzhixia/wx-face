@@ -8,7 +8,7 @@
 进行点名
 ## 小程序截图图片预览
 ![教师端截图](https://github.com/PENGFEI-CN/wx-xdface/blob/master/preImages/%E6%95%99%E5%B8%88/%E6%95%99%E5%B8%88%E7%95%8C%E9%9D%A2.png "教师端截图")
-![学生端截图](https://github.com/PENGFEI-CN/wx-xdface/blob/master/preImages/%E5%AD%A6%E7%94%9F/%E5%AD%A6%E7%94%9F%E7%95%8C%E9%9D%A2.png "学生端截图")
+![学生端截图](https://github.com/PENGFEI-CN/wx-xdface/blob/master/preImages/%E5%AD%A6%E7%94%9F/%E4%B8%8A%E4%BC%A0%E4%BF%A1%E6%81%AF%E8%BF%87%E7%A8%8B.png "学生端截图")
 ## 参考文档
 微信小程序官方开发文档
 ## 存在的问题以及改进
