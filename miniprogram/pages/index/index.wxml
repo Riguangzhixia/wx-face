@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section">
+        欢迎{{name[index]}}使用本系统  
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && caAnIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="divLine"></view>
+  <view wx:if="{{index==null}}">
+  <view class='usermotto'>
+  <button class="user-motto" bindtap='bindPickerChange'>进入系统</button>
+  </view>
+  </view>
+  <view wx:if="{{index != null}}">
+    <view class='teacher' wx:if="{{index==1}}">
+      <view class="usermotto">
+        <navigator url='{{url[0]}}'>
+          <button class="user-motto" bindtap='receive'>开始上课</button>
+        </navigator>
+      </view>
+      <view class='warn'>
+        <text class='warn'>点击即开始点名检测课堂状态并开始陆续返回本节课的数据，再次点击则开始新的一堂课</text>
+      </view>
+    </view>
+
+    <!--index.wxml-->
+    <view class='student' wx:if="{{index != 1}}">
+      <view class="usermotto">
+        <button class="user-motto" bindtap='onclick1'>上传信息</button>
+      </view>
+      <view class="usermotto">
+        <button class="user-motto"  bindtap='onclick2'>上课状态</button>
+      </view>
+      <view class="usermotto">
+        <button class="user-motto"  bindtap='onclick3'>到课记录</button>
+      </view>
+    </view>
+  </view>
+</view>
+

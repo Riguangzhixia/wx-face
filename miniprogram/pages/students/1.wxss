@@ -1,0 +1,23 @@
+.result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200rpx;
+}
+.test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0rpx 0rpx medium 0rpx;
+  border-color:  #dadfde;
+}
+.button1{
+  width: 40%;
+  margin:400rpx auto;
+}

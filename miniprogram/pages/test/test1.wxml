@@ -1,0 +1,21 @@
+<!--miniprogram/pages/test/test1.wxml
+<view wx:for="{{item_list}}" wx:key="unique">
+  <text>{{item.id}}</text>
+</view>-->
+<view class='result'>
+  <text class='test'>学生状态评分{{state}}</text>
+</view>
+<view class='table'> 
+    <view  class='tr'>
+      <view class='th'>姓名</view>
+      <view class='th'>学号</view>
+      <view class='th'>课堂状态评分</view>
+    </view>
+  <block wx:for="{{absentList}}" wx:key="unique">
+    <view class='tr'>
+      <view class='td'>{{item.name}}</view>
+      <view class='td'>{{item.stuid}}</view>
+      <view class='td'>{{item.state}}</view>
+    </view>
+  </block>
+</view>

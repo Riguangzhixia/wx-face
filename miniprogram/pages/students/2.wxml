@@ -1,0 +1,12 @@
+<view class='table'> 
+    <view  class='tr'>
+      <view class='th'>历史到课记录</view>
+    </view>
+  <block wx:for="{{absentList}}" wx:key="unique">
+    <view class='tr'>
+      <view class='td'>{{item}}</view>
+    </view>
+  </block>
+</view>
+
+<button class='button1' bindtap='gohome'>返回</button>

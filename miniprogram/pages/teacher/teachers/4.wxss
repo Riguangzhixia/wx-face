@@ -1,0 +1,44 @@
+/* miniprogram/pages/teacher/teachers/4.wxss */
+.image1{
+  height: 700rpx;
+  width:650rpx;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+.image2{
+  height:80%;
+  width:100%;
+  border:1rpx solid #dadada;
+  box-shadow: 2rpx 8rpx 8rpx grey;
+  }
+.result{
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+  padding: 20rpx 10rpx;
+  border-style: solid;
+  border-width: 0rpx 0rpx medium 0rpx;
+  border-color:  #dadfde;
+}
+.button1{
+  width: 40%;
+  margin: 30rpx auto;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: thin;
+  border-color:  #dadfde;
+  box-shadow: 0rpx 6rpx 6rpx #dfdbdb;
+}

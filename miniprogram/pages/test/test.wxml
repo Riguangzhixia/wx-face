@@ -1,0 +1,1 @@
+  <button class='button1' bindtap='doUpload'>上传图片</button>

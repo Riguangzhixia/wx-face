@@ -1,0 +1,15 @@
+<!--miniprogram/pages/teacher/teachers/5/1.wxml-->
+
+<view class='table'> 
+    <view  class='tr'>
+      <view class='th'>学号及其未到课时间</view>
+    </view>
+  <block wx:for="{{studentList}}" wx:key="unique">
+      <view class='td'>{{item.number}}</view>
+      <view class='td'>
+        <view wx:for="{{(item.data)}}" wx:key="unique">
+        {{item}}
+        </view>
+      </view>
+  </block>
+</view>

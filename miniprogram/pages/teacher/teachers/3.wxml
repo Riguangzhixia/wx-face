@@ -1,0 +1,7 @@
+<view class='result'>
+  <text class='test'>学生抬头率：{{upState}}%</text>
+</view>
+<view style='font-size:35rpx;text-indent:70rpx;margin:20rpx;color:grey;'>
+  <text>课堂结束后可从课堂总结页查看本节课学生抬头率变化图</text>
+</view>
+<button class='button1' bindtap='gohome'>返回</button>

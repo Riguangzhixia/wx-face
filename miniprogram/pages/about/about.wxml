@@ -1,0 +1,9 @@
+<view class='about'>
+  <text class='title'>西电face智慧教室平台</text>
+  <text class='title-2'>平台简介：</text>
+  <text class='text'>此平台是为智慧教室学生检测系统项目而开发的微信端使用平台，为老师和学生提供服务，实现快速点名与学生的状态检测。</text>
+  <text class='title-2'>项目成员：</text>
+  <text class='text'>彭飞，杜巍，姜汶岐，米芃，余观宝</text>
+</view> 
+  <image class='image' src="/image/1.jpeg" mode="aspectFit"></image>
+

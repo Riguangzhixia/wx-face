@@ -1,0 +1,34 @@
+
+.tr{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td {
+  padding: 5px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%;
+}
+.th {
+  font-weight: 400;
+  background-color: #eaeff0;
+}
+.table {
+  margin:10rpx;
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+  box-shadow: 0rpx 2rpx 2rpx #dadada;
+}
+.button1{
+  border:1px solid #dadada;
+  width: 40%;
+  position: fixed;
+  bottom:0rpx;
+  left:30%;
+  box-shadow: 0rpx 6rpx 6rpx #dfdbdb;
+
+}

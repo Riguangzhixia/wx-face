@@ -1,0 +1,10 @@
+<!--miniprogram/pages/teacher/teachers/4.wxml-->
+<view class='result'>
+  <text class='test'>本届课堂学生状态评分变化曲线图</text>
+</view>
+
+<view class='image1'>
+  <image src='{{src}}' class='image2'></image>
+</view>
+
+<button class='button1' bindtap='gohome'>返回</button>

@@ -1,0 +1,49 @@
+
+  <view class='progerss' wx:if="{{percent<99}}">
+    <progress percent="{{percent}}" show-info='true'  activeColor='grey' boeder-radius='20rpx' stroke-width='20' />
+  </view>
+
+<view class='body'>
+  <block wx:if="{{percent>=99}}">
+   <view class='page'>
+     
+      <view class="usermotto">
+        <navigator url='{{url[0]}}'>
+          <button class="user-motto">到课率</button>
+        </navigator>
+      </view>
+
+      <view class="usermotto">
+        <navigator url='{{url[1]}}'>
+          <button class="user-motto" >学生状态</button>
+        </navigator>
+      </view>
+
+      <view class="usermotto">
+        <navigator url='{{url[2]}}'>
+          <button class="user-motto" >抬头率</button>
+        </navigator>
+      </view>
+
+      <view class="usermotto">
+        <navigator url='{{url[3]}}'>
+          <button class="user-motto" >实时监控</button>
+        </navigator>
+      </view>
+
+      
+      <view class="usermotto">
+        <navigator url='{{url[4]}}'>
+          <button class="user-motto" >课堂总结</button>
+        </navigator>
+      </view>
+          
+  <view class="usermotto">
+        <navigator url='{{url[5]}}'>
+          <button class="user-motto" >历史记录</button>
+        </navigator>
+      </view>
+   </view>
+    <button class='button1' bindtap='gohome'>结束课程</button>
+  </block>
+</view>

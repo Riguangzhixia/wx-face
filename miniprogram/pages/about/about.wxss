@@ -1,0 +1,34 @@
+.about{
+  display: flex;
+  margin: 40rpx;
+  flex-direction: column;
+}
+
+.title{
+  text-align: center;
+  color: red;
+  margin-top: 30rpx;
+  font-size: 60rpx;
+}
+
+.title-2{
+  color: blue;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+
+.text{
+  color: black;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  text-indent: 70rpx;
+}
+
+.image{
+  display: block;
+  margin: 0 auto; 
+  margin-bottom: 70rpx;
+}
+
+
+

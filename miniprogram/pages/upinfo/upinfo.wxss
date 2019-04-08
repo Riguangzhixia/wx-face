@@ -1,0 +1,74 @@
+.page{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+    background: white;
+}
+.body
+{ 
+  margin-top: 20rpx;
+  height:80vh;
+  background:white;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  align-content:center;
+  border: 2rpx solid  #96C2F1;
+  box-shadow:  0rpx 4rpx 5rpx  #96C2F1 ;
+}
+.Input {
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  align-content:center;
+  box-shadow:  0rpx 0rpx 2rpx  96C2F1 ;
+}
+
+.uploader {
+  height: 100rpx;
+  width: 95%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:0 20rpx;
+  box-sizing: border-box; 
+  margin: 0 40rpx;
+  box-shadow: 0px 1px 4px #c2b9b9 ;
+}
+
+.button1{
+border: 1px solid rgba(0, 0, 0, 0.1);
+margin:60rpx auto;
+width:400rpx;
+background-color: rgb(235, 228, 228);
+box-shadow: 0px 1px 4px #c2b9b9 ;
+}
+.button2{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin:100rpx auto;
+  width:300rpx;
+  background-color: rgb(235, 228, 228);
+  box-shadow: 0px 1px 4px #c2b9b9 ;
+}
+.warn{
+  display: block;
+  font-size: 35rpx;
+  margin-bottom:15rpx;
+  color: red;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40rpx;
+}
+.buttoncontainer{
+  margin-top: 40rpx;
+  width:100%;
+  border-style: solid;
+  border-width:medium 0rpx 0rpx 0rpx;
+  border-color:#c2b9b9;
+}

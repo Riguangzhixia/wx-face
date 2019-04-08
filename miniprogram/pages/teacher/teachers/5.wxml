@@ -1,0 +1,18 @@
+<!--miniprogram/pages/teacher/teachers/5.wxml-->
+<view class='result'>
+  <text class='test'>欢迎来到学生历史到课记录查询页</text>
+</view>
+<view style='font-size:35rpx;text-indent:70rpx;margin:20rpx;color:grey;'></view>
+
+  <button class='button' bindtap='allSearch'>查询全体学生到课记录</button>
+
+  <form bindsubmit="formSubmit">
+    <block class='Input'>
+      <view class="uploader">
+        <text>学号：</text>  
+        <input class="input" type='number' name="number" placeholder="请在此输入"/>
+      </view> 
+      <button class='button2' form-type='submit'>查询此名学生到课记录</button>
+    </block>
+  </form>
+<button class='button3' bindtap='gohome'>返回</button>

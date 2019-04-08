@@ -1,0 +1,23 @@
+<!--miniprogram/pages/teacher/teachers/1.wxml-->
+<view class='result'>
+  <text class='test'>本节课的到课率为：{{classRate}}%</text>
+</view>
+
+<view style='font-size:35rpx;text-indent:70rpx;margin:20rpx;'>
+  <text>未到学生名单:</text>
+</view>
+
+<view class='table'> 
+    <view  class='tr'>
+      <view class='th'>姓名</view>
+      <view class='th'>学号</view>
+    </view>
+  <block wx:for="{{absentList}}" wx:key="unique">
+    <view class='tr'>
+      <view class='td'>{{item.name}}</view>
+      <view class='td'>{{item.number}}</view>
+    </view>
+  </block>
+</view>
+
+<button class='button1' bindtap='gohome'>返回</button>
