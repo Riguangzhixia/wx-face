@@ -15,11 +15,21 @@
 
 ## 小程序截图图片预览
 
-<img src="preImages/1.png" width="50%" height="50%" alt="首页"/>
-<img src="preImages/2-1.png" width="50%" height="50%" alt="教师页"/>
-<img src="preImages/2-2.png" width="50%" height="50%" alt="教师页"/>
-<img src="preImages/2-3.png" width="50%" height="50%" alt="教师页"/>
-<img src="preImages/3-1.png" width="50%" height="50%" alt="学生页"/>
+<div class="imgs">
+    <img src="preImages/1.png" width="40%" height="40%" alt="首页"/>
+    <img src="preImages/2-1.png" width="40%" height="40%" alt="教师页"/>
+    <img src="preImages/2-2.png" width="40%" height="40%" alt="教师页"/>
+    <img src="preImages/2-3.png" width="40%" height="40%" alt="教师页"/>
+    <img src="preImages/3-1.png" width="40%" height="40%" alt="学生页"/>
+</div>
+<style>
+.imgs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow:wrap;
+}
+</style>
 
 ## 参考文档
 
