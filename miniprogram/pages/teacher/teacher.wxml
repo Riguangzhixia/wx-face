@@ -1,49 +1,60 @@
-
-  <view class='progerss' wx:if="{{percent<99}}">
+<view class='progerss' wx:if="{{percent<99}}">
     <progress percent="{{percent}}" show-info='true'  activeColor='grey' boeder-radius='20rpx' stroke-width='20' />
-  </view>
-
+</view>
 <view class='body'>
   <block wx:if="{{percent>=99}}">
    <view class='page'>
-     
       <view class="usermotto">
         <navigator url='{{url[0]}}'>
-          <button class="user-motto">到课率</button>
+          <a class="user-motto">
+          <image src='../../image/icons/inrate.png'>></image>
+          到课率</a>
         </navigator>
       </view>
 
       <view class="usermotto">
         <navigator url='{{url[1]}}'>
-          <button class="user-motto" >学生状态</button>
+          <a class="user-motto" >
+          <image src='../../image/icons/classstate.png'>></image>
+          学生状态</a>
         </navigator>
       </view>
 
       <view class="usermotto">
         <navigator url='{{url[2]}}'>
-          <button class="user-motto" >抬头率</button>
+          <a class="user-motto" >
+          <image src='../../image/icons/uprate.png'>></image>
+          抬头率</a>
         </navigator>
       </view>
 
       <view class="usermotto">
         <navigator url='{{url[3]}}'>
-          <button class="user-motto" >实时监控</button>
+          <a class="user-motto" >
+          <image src='../../image/icons/monitor.png'>></image>
+          实时监控</a>
         </navigator>
       </view>
 
       
       <view class="usermotto">
         <navigator url='{{url[4]}}'>
-          <button class="user-motto" >课堂总结</button>
+          <a class="user-motto" >
+          <image src='../../image/icons/conclude.png'>></image>
+          课堂总结</a>
         </navigator>
       </view>
           
   <view class="usermotto">
         <navigator url='{{url[5]}}'>
-          <button class="user-motto" >历史记录</button>
+          <a class="user-motto" >
+          <image src='../../image/icons/history2.png'>></image>
+          历史记录</a>
         </navigator>
       </view>
    </view>
-    <button class='button1' bindtap='gohome'>结束课程</button>
+    <a class='user-motto' bindtap='gohome'>
+    <image src='../../image/icons/end.png'>></image>
+    结束课程</a>
   </block>
 </view>

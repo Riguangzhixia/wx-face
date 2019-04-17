@@ -1,22 +1,22 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/upinfo/upinfo",
+    "pages/teacher/teachers/3",
     "pages/teacher/teachers/2",
+    "pages/teacher/teachers/5/2",
     "pages/test/test1",
     "pages/teacher/teacher",
     "pages/teacher/teachers/5",
     "pages/teacher/teachers/5/1",
     "pages/students/2",
-    "pages/upinfo/upinfo",
     "pages/test/test",
     "pages/students/1",
     "pages/teacher/teachers/4",
-    "pages/teacher/teachers/3",
     "pages/teacher/teachers/1",
     "pages/about/about",
     "pages/view/view",
     "pages/databaseGuide/databaseGuide",
-    "pages/teacher/teachers/5/2",
     "pages/webview"
   ],
   "window": {

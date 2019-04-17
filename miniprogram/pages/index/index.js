@@ -30,7 +30,7 @@ Page({
       data: {},
       success: function (res) {
         // success
-        app.globalData.student = res.data
+        app.globalData.student = res.data;
         wx.showToast({
           icon: 'none',
           title: '获取数据成功'
@@ -101,7 +101,7 @@ Page({
               title: '智慧教室平台' + that.data.identity[that.data.index] + '端'
             }),
             wx.request({
-              url: 'https://start.xdface.cn/test.php',//此处填写你后台请求地址
+              url: 'https://start.xdface.cn/test.py',//此处填写你后台请求地址
               method: 'GET',
               header: { 'Content-Type': 'application/json' },
               data: {},

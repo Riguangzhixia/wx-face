@@ -1,7 +1,11 @@
 <view class='page'>
  <view class='body'>
-   <form bindsubmit="formSubmit">
-    <button class='button1' bindtap='doUpload'>上传图片</button>
+    <form bindsubmit="formSubmit">
+    <view class='usermotto'>
+      <a class='user-motto' bindtap='doUpload'>
+      <image src='../../image/icons/upimg.png'></image>
+      上传图片</a>
+    </view>
     <view class='Input'>
       <view class='warn'>
         <text>信息请认真填写，一经上传不能修改</text>
@@ -18,8 +22,9 @@
         <text>班级：</text>
         <input class="input" type='number' name="class" placeholder="请在此输入"/>
       </view>
-      <view class='buttoncontainer'>
-        <button class='button2' form-type='submit'>提交</button>
+      <view class='usermotto'>
+        <button class='button1' form-type='submit'>
+        提交</button>
       </view>
     </view>
   </form>

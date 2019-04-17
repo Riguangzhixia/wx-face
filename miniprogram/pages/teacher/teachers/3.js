@@ -30,9 +30,12 @@ Page({
       data: {},
       success: function (res) {
         // success
-        console.log(res.data);//打印请求返回的结果
+        var num = parseFloat(res.data[res.data.length - 1].head_rate);
+        var rate = num.toFixed(2);
+        console.log(res.data[res.data.length - 1].head_rate);//打印请求返回的结果
+        console.log(rate);
         that.setData({
-          upState: res.data[res.data.length - 1].head_rate*100
+          upState: rate
         })
       },
       fail: function (res) {

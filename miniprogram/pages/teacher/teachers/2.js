@@ -16,17 +16,19 @@ Page({
     wx.request({
       url: 'https://start.xdface.cn/getData/stustate.php',//此处填写你后台请求地址
       method: 'GET',
-      header: { 'Content-Type': 'application/json' },
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
       data: {
       },
       success: function (res) {
         var state = 0;
         for (var i = 0; i < res.data.length; i++) {
           state += parseInt(res.data[i].state)
+          console.log(res.data);
         }
         //console.log(state)
         that.setData({
-          absentList: res.data,
+          absentList: JSON.parse(decodeURIComponent(JSON.stringify(res.data))),
           state: state / 10
         })
         // success

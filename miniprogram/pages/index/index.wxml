@@ -12,17 +12,22 @@
   </view>
   <view class="divLine"></view>
   <view wx:if="{{index==null}}">
-  <view class='usermotto'>
-  <button class="user-motto" bindtap='bindPickerChange'>进入系统</button>
-  <button class="user-motto" bindtap='webview'>新网页</button>
-
-  </view>
+    <view class='usermotto'>
+      <a class="user-motto" style="width:200rpx;" bindtap='bindPickerChange'>
+      <image style='width:100rpx;height: 100rpx;' class='icon' src='../../image/icons/in.png'></image>
+      进入系统</a>
+      <a class="user-motto" style="width:200rpx;" bindtap='webview'>
+            <image style='width:100rpx;height: 100rpx;' class='icon' src='../../image/icons/test.png'></image>
+在线测试</a>
+    </view>
   </view>
   <view wx:if="{{index != null}}">
     <view class='teacher' wx:if="{{index==1}}">
       <view class="usermotto">
         <navigator url='{{url[0]}}'>
-          <button class="user-motto" bindtap='receive'>开始上课</button>
+          <a class="user-motto" bindtap='receive'>
+          <image src='../../image/icons/start.png'></image>
+          开始上课</a>
         </navigator>
       </view>
       <view class='warn'>
@@ -33,13 +38,19 @@
     <!--index.wxml-->
     <view class='student' wx:if="{{index != 1}}">
       <view class="usermotto">
-        <button class="user-motto" bindtap='onclick1'>上传信息</button>
+        <a class="user-motto" bindtap='onclick1'>
+                <image src='../../image/icons/upinfo.png'></image>
+        上传信息</a>
       </view>
       <view class="usermotto">
-        <button class="user-motto"  bindtap='onclick2'>上课状态</button>
+        <a class="user-motto"  bindtap='onclick2'>
+                <image src='../../image/icons/stustate.png'>></image>
+        上课状态</a>
       </view>
       <view class="usermotto">
-        <button class="user-motto"  bindtap='onclick3'>到课记录</button>
+        <a class="user-motto"  bindtap='onclick3'>
+                <image src='../../image/icons/history.png'>></image>
+        到课记录</a>
       </view>
     </view>
   </view>
