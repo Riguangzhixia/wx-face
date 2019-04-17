@@ -15,13 +15,11 @@
 
 ## 小程序截图图片预览
 
-<img src="preImages/1.png" width="50%" height="50%"/>
-
-![入口截图](preImages/1.png "截图")
-![教师端截图](preImages/2-1.png "教师端截图")
-![教师端截图](preImages/2-2.png "教师端截图")
-![教师端截图](preImages/2-3.png "教师端截图")
-![学生端截图](preImages/3-1.png "学生端截图")
+<img src="preImages/1.png" width="50%" height="50%" alt="首页"/>
+<img src="preImages/2-1.png" width="50%" height="50%" alt="教师页"/>
+<img src="preImages/2-2.png" width="50%" height="50%" alt="教师页"/>
+<img src="preImages/2-3.png" width="50%" height="50%" alt="教师页"/>
+<img src="preImages/3-1.png" width="50%" height="50%" alt="学生页"/>
 
 ## 参考文档
 
