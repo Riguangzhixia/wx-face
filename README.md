@@ -16,11 +16,9 @@
 ## 小程序截图图片预览
 
 ![入口截图](preImages/1.png "截图")
-
 ![教师端截图](preImages/2-1.png "教师端截图")
 ![教师端截图](preImages/2-2.png "教师端截图")
 ![教师端截图](preImages/2-3.png "教师端截图")
-
 ![学生端截图](preImages/3-1.png "学生端截图")
 
 ## 参考文档
