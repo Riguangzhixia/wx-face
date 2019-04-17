@@ -15,6 +15,8 @@
 
 ## 小程序截图图片预览
 
+<img src="preImages/1.png" width="50%" height="50%"/>
+
 ![入口截图](preImages/1.png "截图")
 ![教师端截图](preImages/2-1.png "教师端截图")
 ![教师端截图](preImages/2-2.png "教师端截图")
