@@ -1,3 +1,18 @@
+page{
+  background-color: rgb(234, 235, 232);
+}
+.page{
+  width: 94%;
+  height: 94vh;
+  margin:0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+  box-shadow: 0 4rpx 4rpx rgb(230, 233, 226); 
+
+}
 .about{
   display: flex;
   margin: 40rpx;
@@ -6,7 +21,7 @@
 
 .title{
   text-align: center;
-  color: red;
+  color: black;
   margin-top: 30rpx;
   font-size: 60rpx;
 }

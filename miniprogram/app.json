@@ -1,49 +1,54 @@
 {
   "pages": [
-    "pages/index/index",
+        "pages/index/index",
+        "pages/students/2",
+        
+        "pages/students/1",
+        
+        "pages/teacher/teachers/5/2",
+        
     "pages/upinfo/upinfo",
+    "pages/teacher/teacher",
+
+
     "pages/teacher/teachers/3",
     "pages/teacher/teachers/2",
-    "pages/teacher/teachers/5/2",
     "pages/test/test1",
-    "pages/teacher/teacher",
     "pages/teacher/teachers/5",
     "pages/teacher/teachers/5/1",
-    "pages/students/2",
     "pages/test/test",
-    "pages/students/1",
     "pages/teacher/teachers/4",
     "pages/teacher/teachers/1",
     "pages/about/about",
     "pages/view/view",
-    "pages/databaseGuide/databaseGuide",
     "pages/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#494949",
+    "navigationBarBackgroundColor": "#0061b2",
     "navigationBarTitleText": "智慧教室平台",
     "navigationBarTextStyle": "white"
   },
-  "tabBar": {
-    "backgroundColor": "#303133",
-    "color": "#fff",
-    "selectedColor": "#CC1004",
-    "list": [
-      {
-        "iconPath": "pages/images/icon1.jpg",
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "selectedIconPath": "pages/images/selectedIcon1.jpg"
-      },
-      {
-        "iconPath": "pages/images/icon2.jpg",
-        "pagePath": "pages/about/about",
-        "text": "关于",
-        "selectedIconPath": "pages/images/selectedIcon2.jpg"
-      }
-    ]
-  },
+"tabBar": {
+  "backgroundColor": "white",
+  "color": "#707070",
+  "selectedColor": "#005DAC",
+  "borderStyle": "white",
+  "list": [
+    {
+      "iconPath": "pages/images/Home.png",
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "selectedIconPath": "pages/images/selectedHome.png"
+    },
+    {
+      "iconPath": "pages/images/About.png",
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "selectedIconPath": "pages/images/selectedAbout.png"
+    }
+  ]
+},
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000

@@ -15,11 +15,11 @@
   background-color: #eaeff0;
 }
 .table {
-  margin:10rpx;
+  margin:20rpx;
   border:1px solid #dadada;
   border-right: 0;
   border-bottom: 0;
-  width: 98%;
+  width: 90%;
   box-shadow: 0rpx 2rpx 2rpx #dadada;
 }
 .result{
@@ -44,9 +44,7 @@
 .button1{
   border:1px solid #dadada;
   width: 40%;
-  position: fixed;
-  bottom:0rpx;
-  left:30%;
+  position:absolute;
+  top:100%;
   box-shadow: 0rpx 6rpx 6rpx #dfdbdb;
-
 }

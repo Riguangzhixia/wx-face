@@ -30,7 +30,7 @@ Page({
       data: {},
       success: function (res) {
         // success
-        var num = parseFloat(res.data[res.data.length - 1].head_rate);
+        var num = parseFloat(res.data[res.data.length - 1].head_rate)*100;
         var rate = num.toFixed(2);
         console.log(res.data[res.data.length - 1].head_rate);//打印请求返回的结果
         console.log(rate);

@@ -1,26 +1,43 @@
 <!--index.wxml-->
+<image class='bgimage' src='/image/bgimg/beijing.jpg'></image>
 <view class="container">
-  <view class="section">
-        欢迎{{name[index]}}使用本系统  
-  </view>
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && caAnIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="divLine"></view>
-  <view wx:if="{{index==null}}">
-    <view class='usermotto'>
-      <a class="user-motto" style="width:200rpx;" bindtap='bindPickerChange'>
-      <image style='width:100rpx;height: 100rpx;' class='icon' src='../../image/icons/in.png'></image>
-      进入系统</a>
-      <a class="user-motto" style="width:200rpx;" bindtap='webview'>
-            <image style='width:100rpx;height: 100rpx;' class='icon' src='../../image/icons/test.png'></image>
-在线测试</a>
+  <view class='section-s'>
+    <view class="section">
+          欢迎使用本系统
     </view>
   </view>
+  <view wx:if="{{index == 1 || index == null}}" style='width:100%;margin:0 auto;'>
+    <swiper class='swiper' indicator-dots='true' style='margin:0 auto;' autoplay='true' interval="5000" duration="500">
+      <view wx:for="{{newsList}}">
+        <swiper-item>
+          <view class="img-top" >
+            <image src='{{item}}' class='bgimg'></image>
+          </view>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+  <view class="divLine"></view>
+  <view class='user' wx:if="{{index != 1 || index == null}}">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="divLine"></view>
+  <view wx:if="{{index==null}}"class='start'>
+    <view class='init'>
+      <view class='usermotto-init start-init'>
+        <a class="user-motto" style="width:200rpx;" bindtap='bindPickerChange'>
+        <image style='width:100rpx;height: 100rpx;' class='icon' src='../../image/icons/in.png'></image>
+        进入系统</a>
+      </view>
+    </view>
+  </view>
+
   <view wx:if="{{index != null}}">
     <view class='teacher' wx:if="{{index==1}}">
       <view class="usermotto">
@@ -37,22 +54,28 @@
 
     <!--index.wxml-->
     <view class='student' wx:if="{{index != 1}}">
-      <view class="usermotto">
+      <view class="usermotto-s">
         <a class="user-motto" bindtap='onclick1'>
                 <image src='../../image/icons/upinfo.png'></image>
         上传信息</a>
       </view>
-      <view class="usermotto">
+      <view class="usermotto-s">
         <a class="user-motto"  bindtap='onclick2'>
-                <image src='../../image/icons/stustate.png'>></image>
+                <image src='../../image/icons/stustate.png'></image>
         上课状态</a>
       </view>
-      <view class="usermotto">
+      <view class="usermotto-s">
         <a class="user-motto"  bindtap='onclick3'>
-                <image src='../../image/icons/history.png'>></image>
+                <image src='../../image/icons/history.png'></image>
         到课记录</a>
       </view>
+      <view class="usermotto-s">
+      <a class="user-motto"  bindtap='webview'>
+                <image class='icon' src='../../image/icons/test.png'></image>
+在线测试</a>
     </view>
   </view>
+  </view>
+  <view class='divLine-bottom'></view>
 </view>
 

@@ -1,7 +1,7 @@
 <view class='page'>
  <view class='body'>
     <form bindsubmit="formSubmit">
-    <view class='usermotto'>
+    <view class='usermotto-img'>
       <a class='user-motto' bindtap='doUpload'>
       <image src='../../image/icons/upimg.png'></image>
       上传图片</a>
@@ -29,5 +29,10 @@
     </view>
   </form>
  </view>
-<button class='button2' bindtap='gohome'>返回</button>
+  <view class='usermotto-end'>
+    <a class='user-motto-end' bindtap='gohome'>
+    <image src='../../image/icons/back.png'></image>
+    返回
+    </a>
+  </view>
 </view> 

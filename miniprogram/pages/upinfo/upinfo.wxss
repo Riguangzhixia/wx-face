@@ -2,33 +2,64 @@
   display: flex;
   flex-direction:column;
   align-items: center;
-    background: white;
+  background: #eaebe8;
+  height: 100vh;
 }
 .user-motto{
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size:40rpx;
-  margin:40rpx;
-  border-bottom: 2px solid #c2b9b9;
+  margin:5%;
+  width: 50%;
+  height: 30%;
+  background-color:white; 
   }
+.user-motto-end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:40rpx;
+  margin:2%;
+  width: 50%;
+  height: 30%;
+  background-color:white; 
+
+}
 .usermotto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 60rpx;
 }
+.usermotto-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60rpx;
+  width:94%;
+  background-color: white;
+}
+.usermotto-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+  width:94%;
+  background-color: white;
+  box-shadow: 0px 1px 4px #c2b9b9 ;
+}
 .body
 { 
-  margin-top: 20rpx;
-  height:80vh;
+  width: 94%;
+  margin-top: 40rpx;
+  height:76vh;
   background:white;
   display: flex;
   align-items: center;
   flex-direction:column;
   align-content:center;
-  border: 2rpx solid  #96C2F1;
-  box-shadow:  0rpx 4rpx 5rpx  #96C2F1 ;
+  box-shadow: 0px 1px 4px #c2b9b9 ;
 }
 .Input {
   background: white;
@@ -53,18 +84,19 @@
 }
 
 .button1{
-border: 1px solid rgba(0, 0, 0, 0.1);
-margin:60rpx auto;
-width:400rpx;
-background-color: rgb(235, 228, 228);
-box-shadow: 0px 1px 4px #c2b9b9 ;
+  margin:60rpx auto;
+  width:400rpx;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0px 1px 4px #c2b9b9 ;
 }
 .button2{
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  margin:50rpx auto;
-  width:300rpx;
-  background-color: rgb(235, 228, 228);
-  box-shadow: 0px 1px 4px #c2b9b9 ;
+  margin-top:50rpx;
+  margin-bottom: 10rpx;
+  width:94%;
+  height:8%;
+  background-color: white;
+  border: 1px solid rgba(223, 213, 213, 0.1);
+  box-shadow: 0 2rpx 4rpx grey;
 }
 image{
   width:100rpx; 
@@ -81,11 +113,4 @@ image{
   flex-direction: column;
   align-items: center;
   margin: 40rpx;
-}
-.buttoncontainer{
-  margin-top: 40rpx;
-  width:100%;
-  border-style: solid;
-  border-width:medium 0rpx 0rpx 0rpx;
-  border-color:#c2b9b9;
 }

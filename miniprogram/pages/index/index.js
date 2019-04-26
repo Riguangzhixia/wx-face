@@ -7,6 +7,7 @@ var util = require('../../util.js/util.js')
 
 Page({
   data: {
+    newsList: ["/image/bgimg/3.jpg", "/image/bgimg/2.jpg"],
     identity:["学生","教师"],
     index: null,//根据id来判断并设置index的值，默认应该是学生以防止未更新数据时学生获得老师的界面从而进行一些操作
     userInfo: {
@@ -58,7 +59,21 @@ Page({
       complete: function(res) {},
     })
   },
-
+  setting:function(){
+    wx.getSetting({
+      success(res) {
+        if (!res.authSetting['scope.userInfo']) {
+          wx.authorize({
+            scope: 'scope.userInfo',
+            success() {
+              // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+              wx.startRecord()
+            }
+          })
+        }
+      }
+    })
+  },
   bindPickerChange: function (event) {
     //console.log('picker发送选择改变，携带值为', e.detail.value)
     const db = wx.cloud.database()
@@ -153,7 +168,9 @@ Page({
 
 
   onLoad: function () {  
-      // 调用云函数
+    
+    this.setting();
+    // 调用云函数
     wx.cloud.init()
     wx.cloud.callFunction({
         name: 'login',

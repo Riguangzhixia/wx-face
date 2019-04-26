@@ -11,5 +11,9 @@
     </view>
   </block>
 </view>
-
-<button class='button1' bindtap='gohome'>返回</button>
+<view class='usermotto-end'>
+  <a class='user-motto-end' bindtap='gohome'>
+  <image src='/image/icons/back.png'></image>
+  返回
+  </a>
+</view>

@@ -53,8 +53,11 @@
         </navigator>
       </view>
    </view>
-    <a class='user-motto' bindtap='gohome'>
-    <image src='../../image/icons/end.png'>></image>
-    结束课程</a>
+   <view class='usermotto-end'>
+      <a class='user-motto-end' bindtap='gohome'>
+      <image src='../../image/icons/end.png'>></image>
+      </a>
+      <view>结束课程</view>
+    </view>
   </block>
 </view>

@@ -1,5 +1,4 @@
 <!--miniprogram/pages/teacher/teachers/5/1.wxml-->
-
 <view class='table'> 
     <view  class='tr'>
       <view class='th'>学号及其未到课时间</view>
@@ -12,4 +11,10 @@
         </view>
       </view>
   </block>
+</view>
+<view class='usermotto-end'>
+  <a class='user-motto-end' bindtap='gohome'>
+  <image src='/image/icons/back.png'></image>
+  返回
+  </a>
 </view>

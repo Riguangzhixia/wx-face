@@ -1,9 +1,10 @@
-<view class='result'>
-  <text class='test'>上课状态：{{state}}</text>
-</view>
+<view class='page'>
+  <view class='result'>
+    <text class='test'>上课状态：{{state}}</text>
+  </view>
 
-<view style='font-size:35rpx;margin:20rpx auto;color:grey; display: flex;flex-direction: column;align-items: center;'>
-  <text>最近一段时间内您的上课评分</text>
+  <view style='font-size:35rpx;margin:20rpx auto;color:grey; display: flex;flex-direction: column;align-items: center;'>
+    <text>最近一段时间内您的上课评分</text>
+  </view>
 </view>
-
 <button class='button1' bindtap='gohome'>返回</button>

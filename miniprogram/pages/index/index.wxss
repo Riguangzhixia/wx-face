@@ -1,18 +1,76 @@
 /**index.wxss**/
 
 .userinfo {
+  width:94%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items:  center;
   justify-content: center;
+  background-color: white;
+}
+.bgimage{
+  display: none;
+  height: 0;
+  width:0;
+}
+.user{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items:  center;
+  justify-content: center;
+  background-color:rgb(234, 235, 232);
+}
+.divLine{
+ background: rgb(234, 235, 232);
+ width: 100%;
+ height: 40rpx;
 }
 
-.divLine{
- margin-top: 20rpx;
- background: #E0E3DA;
+.swiper{
+  width: 100%;
+  height: 30vh;
+  background: rgba(236, 247, 245, 0.5);
+  display: flex;   
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1rpx solid white;
+}
+.img-top{
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(234, 235, 232);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rpx 0;
+}
+.bgimg{
+  width: 94%;
+  height: 100%;
+}
+.divLine-bottom{
+ background: rgb(234, 235, 232);
  width: 100%;
- height: 5rpx;
+ height: 5%;
+}
+.start{
+  background-color: rgb(234, 235, 232);
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items:  center;
+  justify-content: center;
+  margin-top: 0!important;
+}
+.init{
+  width:94%;
+  background-color: white;
 }
 .user-motto{
   display: flex;
@@ -20,7 +78,7 @@
   align-items: center;
   font-size:40rpx;
   margin:20rpx;
-  border-bottom: 2px solid #c2b9b9;
+
 }
 .userinfo-avatar {
   width: 200rpx;
@@ -41,19 +99,48 @@
   justify-content: center;
   margin-top: 60rpx;
 }
-
-.section{
+.usermotto-init{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.usermotto-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  margin: 10rpx;
+  width: 47%;
+  height:240rpx;
+  background-color: white;
+}
+.section-s{
+  width:100%;
+  background-color: #6abeeb;
   display: flex;
   flex-direction: column;
-  margin: 60rpx;
+  align-items: center;
+  padding: 10rpx;
+}
+.section{
+  background-color: white;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  margin:0 40rpx;
   align-items: center;
   width:400rpx;
-  border: 10rpx solid rgb(252, 249, 247);
+  border:2rpx solid rgb(252, 249, 247);
   box-shadow: 0px 4px 4px #c2b9b9 ;
 }
 .student{
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(234, 235, 232);
+  padding: 10rpx;
 }
 .student image{
   width:80rpx; 
@@ -63,7 +150,6 @@
   width:100rpx; 
   height:100rpx;
 }
-
 .teacher{
   display: flex;
   flex-direction: column;

@@ -19,5 +19,6 @@
     </view>
   </block>
 </view>
-
-<button class='button1' bindtap='gohome'>返回</button>
+<view class='button1'>
+  <button bindtap='gohome'>返回</button>
+</view>

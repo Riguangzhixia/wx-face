@@ -1,3 +1,17 @@
+page{
+  background-color: rgb(234, 235, 232);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page{
+  background-color: white;
+  height: 80vh;
+  margin: 20rpx auto;
+  width: 94%;
+  box-shadow: 0px 1px 4px #c2b9b9 ;
+  border:1px solid #dadada;
+}
 .result{
   display: flex;
   flex-direction: column;
@@ -18,6 +32,8 @@
   border-color:  #dadfde;
 }
 .button1{
-  width: 40%;
-  margin:400rpx auto;
+  width: 94%;
+  margin: 20rpx;
+  box-shadow: 0px 1px 4px #c2b9b9 ;
+  border:1px solid #dadada;
 }
